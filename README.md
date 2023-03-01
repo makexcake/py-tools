@@ -1,6 +1,6 @@
 # py-tools 
 
-py-tools is an example of implementation of python for Devops tasks solutions.
+An example of implementation of python for Devops tasks solutions.
 
 ## Installation
 
