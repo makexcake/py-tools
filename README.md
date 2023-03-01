@@ -1,6 +1,6 @@
 # py-tools 
 
-An example of implementation of python for Devops tasks solutions.
+Collection of function for monitoring and managing ec2 resources and monitoring servers.
 
 ## Installation
 
