@@ -1,5 +1,3 @@
 boto3
-operator
 requests
-smtplib
-os
+
