@@ -13,8 +13,8 @@ def send_mail(mail_address, mail_password, send_to, text):
 
 def monitor_website(url, send_to):
 
-    EMAIL_ADRESS = os.environ.get('MAIL_ADD')
-    EMAIL_PASSWORD = os.environ.get('MAIL_PWD')
+    MAIL_ADR = os.environ.get('MAIL_ADR')
+    MAIL_PWD = os.environ.get('MAIL_PWD')
     
     try:
         response = requests.get(url)
@@ -24,13 +24,11 @@ def monitor_website(url, send_to):
         else:
             print('Website status: FAIL')
             # send mail to myself
-            send_mail(EMAIL_ADRESS, EMAIL_PASSWORD, send_to, "Subject: SITE BROKEN\n!!PLS HALP!!")
+            send_mail(MAIL_ADR, MAIL_PWD, send_to, "Subject: SITE BROKEN\n!!PLS HALP!!")
 
     except Exception as ex:
-        print(f'Connection ERROR happened: {ex}')
-        message = "Subject: no connection to server\nConnection with app error: " + str(ex)
-        send_mail(EMAIL_ADRESS, EMAIL_PASSWORD, send_to, message)
+        #print(f'Connection ERROR happened: {ex}')
+        message = "Subject: no connection to server\nConnection with app error"
+        send_mail(MAIL_ADR, MAIL_PWD, send_to, message)
 
 
-
-monitor_website("https://gomomgle.com/skdlk", 'v.nudelman@gmail.com')
