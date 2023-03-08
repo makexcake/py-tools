@@ -57,7 +57,7 @@ def start_monitor(server_ip, url, container_id, mail):
     while True:    
         schedule.run_pending()
 
-start_monitor('3.126.91.188', "http://3.126.91.188:8081/", '340505b70ed8', "v.nudelman@gmail.com")
+# start_monitor('your-server-ip', "your app url", 'app continer id', "recipient mail")
 
 
 
