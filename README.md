@@ -1,4 +1,4 @@
-# py-tools 
+# Python-Boto3
 
 Collection of functions for monitoring and managing ec2 resources and monitoring servers.
 
